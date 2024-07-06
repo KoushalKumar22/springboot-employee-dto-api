@@ -12,17 +12,10 @@ public class Employee {
     int id;
     @Column(name = "Name")
     String name;
-
     @Column(name = "Salary")
     long sal;
 
     public Employee() {
-    }
-
-    public Employee(int id, String name, long sal) {
-        this.id = id;
-        this.name = name;
-        this.sal = sal;
     }
 
     public int getId() {

@@ -42,7 +42,7 @@ public class EmployeeController {
         }).collect(Collectors.toList());
     }
 
-    @GetMapping("/{id}")
+    @GetMapping("/id/{id}")
     public EmployeeDto findById(@PathVariable int id){
         Employee e=erepo.findById(id).get();
         EmployeeDto employeeDto=new EmployeeDto();
@@ -65,11 +65,11 @@ public class EmployeeController {
                 .collect(Collectors.toList());
     }
 
-    @PatchMapping("/upd/{id}")
+    @PatchMapping("/update/{id}")
     public EmployeeDto updateById(@PathVariable int id,@RequestBody EmployeeDto employeeDto){
         Employee e=erepo.findById(id).get();
         e.setName(employeeDto.getName());
-        e.setSal(employeeDto.getSal());
+//        e.setSal(employeeDto.getSal());   //Enable If want to show both fields;
         BeanUtils.copyProperties(e, employeeDto);
         erepo.save(e);
         return employeeDto;

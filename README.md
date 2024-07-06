@@ -23,5 +23,5 @@ This project is a Spring Boot application that demonstrates how to perform basic
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/springboot-employee-dto-api.git
+git clone https://github.com/KoushalKumar22/springboot-employee-dto-api.git
 cd springboot-employee-dto-crud-api

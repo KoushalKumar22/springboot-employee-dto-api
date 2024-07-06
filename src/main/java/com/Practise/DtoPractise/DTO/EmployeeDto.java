@@ -5,11 +5,9 @@ public class EmployeeDto {
     int id;
     String name;
     long sal;
-
     public int getId() {
         return id;
     }
-
     public void setId(int id) {
         this.id = id;
     }
